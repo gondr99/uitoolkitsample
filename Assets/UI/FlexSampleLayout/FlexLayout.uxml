@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/FlexSampleLayout/FlexLayout.uss?fileID=7433441132597879392&amp;guid=8f312daffe5267a45899b4bbe4d9475f&amp;type=3#FlexLayout" />
+    <ui:VisualElement style="padding-left: 50px; padding-right: 50px; padding-top: 50px; padding-bottom: 50px; flex-direction: column;">
+        <ui:VisualElement name="Container" style="flex-direction: row; background-color: rgb(238, 194, 116); padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 20px;">
+            <ui:VisualElement name="item1" class="item" style="background-color: rgb(168, 77, 77);" />
+            <ui:VisualElement name="item2" class="item" style="background-color: rgb(185, 139, 32);" />
+            <ui:VisualElement name="item3" class="item" style="background-color: rgb(25, 67, 106);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

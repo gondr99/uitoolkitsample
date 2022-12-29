@@ -1,0 +1,109 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/CardSelector/CardSelector.uss?fileID=7433441132597879392&amp;guid=6191ffbfd7eb5bf418c8ce3e59035965&amp;type=3#CardSelector" />
+    <ui:VisualElement name="Container" style="flex-grow: 1; align-items: center; justify-content: center; background-color: rgba(125, 125, 125, 255);">
+        <ui:VisualElement name="stat-data-panel" style="width: 33%; height: 64%; background-image: url(&apos;project://database/Assets/Textures/UI_atlas.psd?fileID=-4797612487579304528&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#Window_bg_02&apos;); align-items: center; padding-top: 15px; padding-bottom: 15px; padding-left: 16px; padding-right: 16px;">
+            <ui:VisualElement name="stat-data-tab" style="width: 94%; height: 11%; flex-direction: row; top: 1px;">
+                <ui:VisualElement name="stat-tab" class="chartab">
+                    <ui:Label text="Stats" display-tooltip-when-elided="true" name="stat-label" picking-mode="Ignore" class="data-label" />
+                </ui:VisualElement>
+                <ui:VisualElement name="skill-tab" class="chartab selected-chartab">
+                    <ui:Label text="Skills" display-tooltip-when-elided="true" name="skill-label" picking-mode="Ignore" class="data-label" />
+                </ui:VisualElement>
+                <ui:VisualElement name="etc-tab" class="chartab">
+                    <ui:Label text="ETC" display-tooltip-when-elided="true" name="etc-label" picking-mode="Ignore" class="data-label" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="stat-data-content" style="flex-grow: 1; width: 95%; overflow: hidden;">
+                <ui:VisualElement name="content-container" style="flex-grow: 1; position: absolute; left: -100%; top: 0; width: 300%; height: 100%; transition-property: left; transition-duration: 0.4s; flex-direction: row; justify-content: space-around;">
+                    <ui:VisualElement name="stat-content" class="char-content">
+                        <ui:VisualElement name="stat-header" style="align-items: center; justify-content: center;">
+                            <ui:Label text="Level 1" display-tooltip-when-elided="true" style="-unity-font-definition: url(&apos;project://database/Assets/Fonts/ChelaOne-Regular%20SDF%201.asset?fileID=11400000&amp;guid=ee8349d62f5ee064cab1369c6633e9ac&amp;type=2#ChelaOne-Regular SDF 1&apos;); font-size: 80px; color: rgb(118, 80, 39); text-shadow: 5px 5px 3px rgba(157, 127, 91, 0.6);" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="stat-sub-header" style="flex-basis: 28%; align-items: center; justify-content: center;">
+                            <ui:VisualElement name="middle-box" style="flex-direction: row; justify-content: space-between; width: 85%; height: 90%;">
+                                <ui:VisualElement name="stat-class" class="stat-class-group">
+                                    <ui:VisualElement name="stat-class-back" class="stat-icon-back">
+                                        <ui:VisualElement name="stat-class-icon" style="width: 60%; height: 60%; background-image: url(&apos;project://database/Assets/Textures/UI_atlas.psd?fileID=-2564998681329843389&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#icon_char_class_01&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                                    </ui:VisualElement>
+                                    <ui:Label text="Class" display-tooltip-when-elided="true" name="stat-class-label" class="stat-label" />
+                                </ui:VisualElement>
+                                <ui:VisualElement name="stat-class" class="stat-class-group">
+                                    <ui:VisualElement name="stat-class-back" class="stat-icon-back">
+                                        <ui:VisualElement name="stat-class-icon" style="width: 60%; height: 60%; background-image: url(&apos;project://database/Assets/Textures/UI_atlas.psd?fileID=5247713648375862759&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#icon_rarity_02&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                                    </ui:VisualElement>
+                                    <ui:Label text="Rarity" display-tooltip-when-elided="true" name="stat-class-label" class="stat-label" />
+                                </ui:VisualElement>
+                                <ui:VisualElement name="stat-class" class="stat-class-group">
+                                    <ui:VisualElement name="stat-class-back" class="stat-icon-back">
+                                        <ui:VisualElement name="stat-class-icon" style="width: 60%; height: 60%; background-image: url(&apos;project://database/Assets/Textures/UI_atlas.psd?fileID=-294399570449754896&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#icon_attack_type_03&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                                    </ui:VisualElement>
+                                    <ui:Label text="Type" display-tooltip-when-elided="true" name="stat-class-label" class="stat-label" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="stat-body" style="flex-basis: 50%; flex-grow: 1; align-items: center;">
+                            <ui:VisualElement name="stat-border" style="width: 82%; height: 83%; padding-left: 2%; padding-right: 2%; padding-top: 2%; padding-bottom: 2%; background-image: url(&apos;project://database/Assets/Textures/UI_atlas.psd?fileID=5956918339006050263&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#Frame_03&apos;); align-items: center; justify-content: center;">
+                                <ui:VisualElement name="star-row" class="stat-row">
+                                    <ui:VisualElement name="stat-life" class="stat">
+                                        <ui:VisualElement name="icon" class="stat-icon" style="background-image: url(&apos;project://database/Assets/Textures/UI_atlas.psd?fileID=-6153321436504949002&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#icon_stat_health&apos;); width: 56px; height: 50px;" />
+                                        <ui:Label text="999" display-tooltip-when-elided="true" />
+                                    </ui:VisualElement>
+                                    <ui:VisualElement name="stat-def" class="stat">
+                                        <ui:VisualElement name="icon" class="stat-icon" style="background-image: url(&apos;project://database/Assets/Textures/UI_atlas.psd?fileID=-3172277855224313667&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#icon_stat_defense&apos;); width: 56px; height: 50px;" />
+                                        <ui:Label text="999" display-tooltip-when-elided="true" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                                <ui:VisualElement name="star-row" class="stat-row">
+                                    <ui:VisualElement name="stat-life" class="stat">
+                                        <ui:VisualElement name="icon" class="stat-icon" style="background-image: url(&apos;project://database/Assets/Textures/UI_atlas.psd?fileID=5875915221099406447&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#icon_stat_critical&apos;); width: 56px; height: 50px;" />
+                                        <ui:Label text="999" display-tooltip-when-elided="true" />
+                                    </ui:VisualElement>
+                                    <ui:VisualElement name="stat-def" class="stat">
+                                        <ui:VisualElement name="icon" class="stat-icon" style="background-image: url(&apos;project://database/Assets/Textures/UI_atlas.psd?fileID=-1500788923240856349&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#icon_stat_speed&apos;); width: 56px; height: 50px;" />
+                                        <ui:Label text="999" display-tooltip-when-elided="true" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                                <ui:VisualElement name="star-row" class="stat-row">
+                                    <ui:VisualElement name="stat-life" class="stat">
+                                        <ui:VisualElement name="icon" class="stat-icon" style="background-image: url(&apos;project://database/Assets/Textures/UI_atlas.psd?fileID=-8350345471323593341&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#icon_stat_ultimate&apos;); width: 56px; height: 50px;" />
+                                        <ui:Label text="999" display-tooltip-when-elided="true" />
+                                    </ui:VisualElement>
+                                    <ui:VisualElement name="stat-def" class="stat">
+                                        <ui:VisualElement name="icon" class="stat-icon" style="background-image: url(&apos;project://database/Assets/Textures/UI_atlas.psd?fileID=-2543750767086175159&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#icon_stat_attack&apos;); width: 56px; height: 50px;" />
+                                        <ui:Label text="999" display-tooltip-when-elided="true" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="stat-content" class="char-content" style="align-items: center;">
+                        <ui:VisualElement name="seperator" style="background-image: url(&apos;project://database/Assets/Textures/UI_atlas.psd?fileID=-4460886454692586519&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#Separator_02&apos;); width: 90%; height: 5px; position: absolute; top: 31%;" />
+                        <ui:VisualElement name="skill-header" style="flex-basis: 31%; flex-direction: row; width: 90%; height: 100%;">
+                            <ui:VisualElement name="skill-slot01" class="skill-slot">
+                                <ui:VisualElement name="skill-icon" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="skill-slot02" class="skill-slot">
+                                <ui:VisualElement name="skill-icon" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="skill-slot03" class="skill-slot">
+                                <ui:VisualElement name="skill-icon" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="skill-slot-active" style="background-image: url(&apos;project://database/Assets/Textures/UI_atlas.psd?fileID=-8733084816360491330&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#Frame_skill_selected&apos;); width: 170px; height: 185px; position: absolute; -unity-background-scale-mode: scale-to-fit; top: 17px; left: 0; transition-property: left; transition-duration: 0.3s;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="skill-content" style="flex-basis: 61%; top: 20px; width: 100%; align-items: center;">
+                            <ui:Label text="Skill name here" display-tooltip-when-elided="true" name="skill-name-label" style="-unity-font-definition: url(&apos;project://database/Assets/Fonts/ChelaOne-Regular%20SDF%201.asset?fileID=11400000&amp;guid=ee8349d62f5ee064cab1369c6633e9ac&amp;type=2#ChelaOne-Regular SDF 1&apos;); -unity-font-style: normal; font-size: 60px; color: rgb(118, 80, 39); -unity-text-align: lower-center;" />
+                            <ui:Label text="Description" display-tooltip-when-elided="true" name="skill-desc-label" style="top: -8px; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; -unity-font-definition: url(&apos;project://database/Assets/Fonts/ChelaOne-Regular%20SDF%201.asset?fileID=11400000&amp;guid=ee8349d62f5ee064cab1369c6633e9ac&amp;type=2#ChelaOne-Regular SDF 1&apos;); font-size: 40px; color: rgb(140, 129, 103);" />
+                            <ui:VisualElement name="char-skill-content" style="flex-basis: 45%; width: 100%; flex-direction: row; justify-content: space-around;">
+                                <ui:VisualElement name="tier-box" style="flex-basis: 68%; height: 100%; background-image: url(&apos;project://database/Assets/Textures/UI_atlas.psd?fileID=6583244753984014086&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#Frame_02&apos;);">
+                                    <ui:Label text="Tier 1" display-tooltip-when-elided="true" name="tier-label" style="padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; -unity-font-definition: url(&apos;project://database/Assets/Fonts/ChelaOne-Regular%20SDF%201.asset?fileID=11400000&amp;guid=ee8349d62f5ee064cab1369c6633e9ac&amp;type=2#ChelaOne-Regular SDF 1&apos;); font-size: 40px; color: rgb(233, 224, 200); -unity-text-align: upper-center;" />
+                                    <ui:Label text="Deal x Damage points to enemy every x seconds" display-tooltip-when-elided="true" name="tier-desc" style="padding-left: 5%; padding-right: 5%; padding-top: 2%; padding-bottom: 3%; flex-basis: 70%; flex-wrap: wrap; -unity-font-definition: url(&apos;project://database/Assets/Fonts/ChelaOne-Regular%20SDF%201.asset?fileID=11400000&amp;guid=ee8349d62f5ee064cab1369c6633e9ac&amp;type=2#ChelaOne-Regular SDF 1&apos;); font-size: 27px; color: rgb(163, 137, 103); white-space: normal;" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="stat-content" class="char-content" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="health_bar" style="position: absolute; width: 200px; height: 50px; background-color: rgb(26, 26, 26); padding-left: 8px; padding-right: 8px; padding-top: 8px; padding-bottom: 8px; border-top-left-radius: 3px; border-bottom-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px;">
+        <ui:VisualElement name="bar" style="flex-basis: auto; height: 100%; width: 100%; background-color: rgb(183, 11, 11); transition-property: width; transition-duration: 0.2s;" />
+    </ui:VisualElement>
+</ui:UXML>

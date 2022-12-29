@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/FlexBook/FlexBook.uss?fileID=7433441132597879392&amp;guid=cc8ad8e972a55494081bf5ceca057c10&amp;type=3#FlexBook" />
+    <ui:VisualElement name="Container" style="width: 100%; height: 100%; background-color: rgb(0, 0, 0);">
+        <ui:VisualElement name="TitleBar" style="flex-direction: row; justify-content: space-between; padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 20px; background-color: rgb(0, 0, 0);">
+            <ui:Label text="Home" display-tooltip-when-elided="true" />
+            <ui:Label text="Inventory" display-tooltip-when-elided="true" />
+            <ui:Label text="Equip" display-tooltip-when-elided="true" />
+            <ui:Label text="Friend" display-tooltip-when-elided="true" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Content" style="flex-direction: row; align-items: center; justify-content: center; flex-grow: 1; flex-shrink: 0; flex-basis: auto;">
+            <ui:VisualElement style="flex-grow: 1; height: 100%; flex-basis: 50%; padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 20px;">
+                <ui:VisualElement class="card" style="height: 100%;">
+                    <ui:Label text="Here" display-tooltip-when-elided="true" class="title" />
+                    <ui:Label text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." display-tooltip-when-elided="true" class="content" style="flex-wrap: nowrap; font-size: 25%;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; height: 100%; flex-basis: 50%; padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 20px;">
+                <ui:VisualElement class="card" style="height: 100%;">
+                    <ui:Label text="Here" display-tooltip-when-elided="true" class="title" />
+                    <ui:Label text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." display-tooltip-when-elided="true" class="content" style="flex-wrap: nowrap; font-size: 25%;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

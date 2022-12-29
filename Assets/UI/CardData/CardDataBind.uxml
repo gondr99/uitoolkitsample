@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="CardTemplate" src="project://database/Assets/UI/CardData/CardTemplate.uxml?fileID=9197481963319205126&amp;guid=181b6c3e26b5eae4296a3d35b2e23a8b&amp;type=3#CardTemplate" />
+    <Style src="project://database/Assets/UI/CardData/CardDataBind.uss?fileID=7433441132597879392&amp;guid=4f96b43201d3db642a04a0b6fb64e5a6&amp;type=3#CardDataBind" />
+    <Style src="project://database/Assets/UI/CardData/CardTemplate.uss?fileID=7433441132597879392&amp;guid=d329d97046a50ac418da62af16b1f40c&amp;type=3#CardTemplate" />
+    <ui:VisualElement name="MainContainer" style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement name="InputContainer" style="justify-content: center; background-color: rgb(254, 242, 178); width: -13px; flex-grow: 0; flex-basis: 25%;">
+            <ui:VisualElement name="InputBox" style="flex-grow: 0; width: auto; align-items: center; justify-content: center;">
+                <ui:TextField picking-mode="Ignore" text="Name" name="InputName" class="inputControl" style="flex-shrink: 1; flex-direction: row; -unity-text-align: upper-center;" />
+                <ui:TextField picking-mode="Ignore" text="Description" name="InputDesc" multiline="true" class="inputControl" />
+            </ui:VisualElement>
+            <ui:VisualElement name="ButtonBox" style="align-items: center; justify-content: center; position: absolute; left: 0; top: 20px; width: 100%;">
+                <ui:Button text="Add Card" display-tooltip-when-elided="true" name="AddButton" style="font-size: 24px; background-color: rgba(0, 0, 0, 255); color: rgba(255, 255, 255, 255); padding-left: 12px; padding-right: 12px; padding-top: 8px; padding-bottom: 8px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="CardContainer" style="flex-grow: 1; flex-shrink: 1; background-color: rgb(16, 28, 44); flex-basis: 70%; justify-content: space-around; align-items: center; flex-direction: row;">
+            <ui:Instance template="CardTemplate" name="CardTemplate" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

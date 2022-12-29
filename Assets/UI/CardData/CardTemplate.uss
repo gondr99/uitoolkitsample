@@ -1,0 +1,30 @@
+.card {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.cardBorder.on {
+    top: 0;
+    opacity: 1;
+}
+
+.cardBorder {
+    transition-property: border-color;
+    transition-duration: 0.3s;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    top: -200px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.cardBorder:hover {
+    border-left-color: rgb(254, 242, 178);
+    border-right-color: rgb(254, 242, 178);
+    border-top-color: rgb(254, 242, 178);
+    border-bottom-color: rgb(254, 242, 178);
+}

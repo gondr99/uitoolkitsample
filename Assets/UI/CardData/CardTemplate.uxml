@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/CardData/CardTemplate.uss?fileID=7433441132597879392&amp;guid=d329d97046a50ac418da62af16b1f40c&amp;type=3#CardTemplate" />
+    <ui:VisualElement name="CardBorder" class="cardBorder" style="border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; background-color: rgba(255, 255, 255, 0); transition-property: border-color, opacity, top; transition-duration: 0.3s, 0.5s, 0.6s; transition-timing-function: ease, ease, ease; transition-delay: 0s, 0s, 0s;">
+        <ui:VisualElement name="CardElement" class="card" style="width: 250px; height: 400px; background-color: rgb(213, 31, 32); justify-content: space-between;">
+            <ui:VisualElement name="CardImage" style="flex-basis: 60%; justify-content: center; align-items: center;">
+                <ui:VisualElement name="imgElemnt" style="width: 140px; height: 140px; background-image: url(&apos;project://database/Assets/Textures/img_lara.png?fileID=21300000&amp;guid=a62331fbd901efc40b07747e52a5c956&amp;type=3#img_lara&apos;); -unity-background-scale-mode: scale-and-crop; border-top-left-radius: 50%; border-bottom-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="CardName" style="flex-basis: 10%; align-items: center; justify-content: center;">
+                <ui:Label text="Lora" display-tooltip-when-elided="true" name="NameLabel" style="font-size: 40px; -unity-font-style: bold; -unity-font-definition: url(&apos;project://database/Assets/Fonts/ChelaOne-Regular%20SDF%201.asset?fileID=11400000&amp;guid=ee8349d62f5ee064cab1369c6633e9ac&amp;type=2#ChelaOne-Regular SDF 1&apos;); color: rgb(229, 229, 229); text-shadow: 3px 2px 3px rgba(55, 55, 55, 0.5); bottom: 20px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="CardInfo" style="flex-basis: 20%; margin-bottom: 40px; background-color: rgb(254, 242, 178); align-items: center; justify-content: center; flex-grow: 1;">
+                <ui:Label text="Something info is &#10;write to here" display-tooltip-when-elided="true" name="InfoLabel" style="color: rgb(36, 36, 36); font-size: 24px; -unity-text-align: upper-center; -unity-font-definition: url(&apos;project://database/Assets/Fonts/ChelaOne-Regular%20SDF%201.asset?fileID=11400000&amp;guid=ee8349d62f5ee064cab1369c6633e9ac&amp;type=2#ChelaOne-Regular SDF 1&apos;);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

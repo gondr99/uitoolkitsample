@@ -1,0 +1,89 @@
+.chartab {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    color: rgb(236, 240, 241);
+    background-image: url('project://database/Assets/Textures/UI_atlas.psd?fileID=984526179731738412&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#tab_window_02_unselected');
+    cursor: url('project://database/Assets/Textures/Cursor/Cursor_B.png?fileID=2800000&guid=d653509610d1495408bbdb94557bea14&type=3#Cursor_B');
+    flex-basis: 33%;
+}
+
+.selected-chartab {
+    background-image: url('project://database/Assets/Textures/UI_atlas.psd?fileID=5286307294870199790&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#tab_window_02_selected');
+}
+
+.data-label {
+    -unity-font-style: bold;
+    font-size: 42px;
+    color: rgb(118, 80, 39);
+    -unity-font-definition: url('project://database/Assets/Fonts/ChelaOne-Regular%20SDF%201.asset?fileID=11400000&guid=ee8349d62f5ee064cab1369c6633e9ac&type=2#ChelaOne-Regular SDF 1');
+}
+
+.char-content {
+    flex-basis: 33%;
+    flex-grow: 1;
+}
+
+.stat-class-group {
+    flex-basis: 33%;
+    align-items: center;
+}
+
+.stat-icon-back {
+    width: 100%;
+    height: 75%;
+    background-image: url('project://database/Assets/Textures/UI_atlas.psd?fileID=1949010409032867619&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#type_crest_bg');
+    -unity-background-scale-mode: scale-to-fit;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-label {
+    font-size: 38px;
+    color: rgb(157, 127, 91);
+    -unity-font-definition: url('project://database/Assets/Fonts/ChelaOne-Regular%20SDF%201.asset?fileID=11400000&guid=ee8349d62f5ee064cab1369c6633e9ac&type=2#ChelaOne-Regular SDF 1');
+}
+
+.stat-row {
+    flex-basis: 25%;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.stat {
+    flex-basis: 50%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.stat-icon {
+    width: 65px;
+    height: 65px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.stat > Label {
+    margin-left: 25px;
+    -unity-font-definition: url('project://database/Assets/Fonts/ChelaOne-Regular%20SDF%201.asset?fileID=11400000&guid=ee8349d62f5ee064cab1369c6633e9ac&type=2#ChelaOne-Regular SDF 1');
+    font-size: 55px;
+    color: rgb(157, 127, 91);
+    -unity-text-align: middle-center;
+    -unity-font-style: normal;
+}
+
+.skill-slot {
+    flex-basis: 33%;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-slot > #skill-icon {
+    cursor: url('project://database/Assets/Textures/Cursor/Cursor_B.png?fileID=2800000&guid=d653509610d1495408bbdb94557bea14&type=3#Cursor_B');
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+    background-image: url('project://database/Assets/Textures/UI_atlas.psd?fileID=-5892847093701679875&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#frame_01');
+}

@@ -1,0 +1,33 @@
+#MainContainer > VisualElement {
+    flex-grow: 1;
+}
+
+.inputControl {
+    -unity-text-align: upper-center;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 80%;
+    height: 60px;
+}
+
+.inputControl > #unity-text-input {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 2px;
+    border-left-color: rgb(16, 28, 44);
+    border-right-color: rgb(16, 28, 44);
+    border-top-color: rgb(16, 28, 44);
+    border-bottom-color: rgb(16, 28, 44);
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: rgb(16, 28, 44);
+    -unity-text-align: upper-center;
+}
+
