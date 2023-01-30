@@ -38,7 +38,7 @@
     font-size: 35px;
     flex-grow: 1;
     -unity-text-align: middle-left;
-    color: rgba(255, 255, 255, 255);
+    color: rgb(255, 255, 255);
 }
 
 .chat.right {
@@ -52,10 +52,11 @@
 }
 
 .chat.right > #dialog > #msg_label {
-    color: rgba(0, 0, 0, 255);
+    color: rgb(0, 0, 0);
     -unity-text-align: middle-right;
 }
 
 .chat.on {
     left: 0;
+    transition-duration: 0.5s;
 }

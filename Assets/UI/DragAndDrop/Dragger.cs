@@ -35,7 +35,7 @@ public class Dragger : MouseManipulator
 
     protected void OnMouseDown(MouseDownEvent e)
     {
-        if (CanStartManipulation(e))
+        if (CanStartManipulation(e)) //액션필터의 조건을 충족하는지 검사
         {
             _startPos = e.localMousePosition; //현재 좌표시스템에서 마우스의 좌표를 반환한다.
             _originalPos = new Vector2(target.style.left.value.value , target.style.top.value.value);

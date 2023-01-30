@@ -1457,7 +1457,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 903, y: 583}
-    spritePosition: {x: 1045, y: 1665}
+    spritePosition: {x: 1047, y: 1666}
   - name: icon_stat_speed
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1479,7 +1479,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 611, y: 1847}
-    spritePosition: {x: 965, y: 1662}
+    spritePosition: {x: 966, y: 1663}
   - name: icon_stat_critical
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1501,7 +1501,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 804, y: 1595}
-    spritePosition: {x: 1045, y: 1735}
+    spritePosition: {x: 1047, y: 1736}
   - name: icon_stat_attack
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1523,7 +1523,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 903, y: 764}
-    spritePosition: {x: 964, y: 1742}
+    spritePosition: {x: 966, y: 1744}
   - name: icon_stat_defense
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1545,7 +1545,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 610, y: 1921}
-    spritePosition: {x: 1052, y: 1817}
+    spritePosition: {x: 1054, y: 1818}
   - name: icon_stat_health
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1567,7 +1567,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 904, y: 707}
-    spritePosition: {x: 963, y: 1820}
+    spritePosition: {x: 964, y: 1821}
   - name: icon_power
     originalName: 
     pivot: {x: 0.5, y: 0.5}
